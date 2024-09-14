@@ -54,6 +54,7 @@ dev_dependencies:
 
 flutter:
   assets:
+    - assets/images//
     - assets/images/white_pawn.svg
     - assets/images/black_pawn.svg
   # The following line ensures that the Material Icons font is

@@ -6,7 +6,7 @@ Widget chats(
     required String lastMessage}) {
   return ListTile(
     leading: CircleAvatar(
-      backgroundImage: NetworkImage(link),
+      backgroundImage: AssetImage(link),
     ),
     title: Text(
       userName,
@@ -16,6 +16,9 @@ Widget chats(
       lastMessage,
       style: const TextStyle(color: Colors.white),
     ),
-    trailing: const Icon(Icons.whatshot_sharp, color: Colors.white),
+    trailing: const Text(
+      "1:00",
+      style: TextStyle(color: Colors.green),
+    ),
   );
 }
