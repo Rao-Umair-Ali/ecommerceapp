@@ -1,4 +1,4 @@
-import 'package:ecommerceapp/Widget/chats.dart';
+import 'package:ecommerceapp/Widget/whatsapp_chats_component.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
