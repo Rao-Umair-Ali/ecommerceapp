@@ -1,4 +1,4 @@
-import 'package:ecommerceapp/screen/periodic_table2.dart';
+import 'package:ecommerceapp/screen/whatsapp_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PeriodictableScreen(),
+      home: WhatsApp(),
     );
   }
 }
