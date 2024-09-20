@@ -118,7 +118,8 @@ class ChessPage extends StatelessWidget {
                   ],
                 )),
             Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 ElevatedButton(onPressed: () {}, child: Text("Ludo")),
                 ElevatedButton(onPressed: () {}, child: Text("Whatsapp")),
