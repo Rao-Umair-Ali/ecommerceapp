@@ -1,3 +1,5 @@
+import 'package:ecommerceapp/Ludo/Screen/ludo_screen.dart';
+import 'package:ecommerceapp/Whatsapp/screen/whatsapp_screen.dart';
 import 'package:ecommerceapp/chess/widget/black_chess_box_with_white_value.dart';
 import 'package:ecommerceapp/chess/widget/black_chess_box_without_value_component.dart';
 import 'package:ecommerceapp/chess/widget/white_chess_box_with_white_value.dart';
@@ -121,8 +123,22 @@ class ChessPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                ElevatedButton(onPressed: () {}, child: Text("Ludo")),
-                ElevatedButton(onPressed: () {}, child: Text("Whatsapp")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => Ludo()),
+                      );
+                    },
+                    child: Text("Ludo")),
+                ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => WhatsApp()),
+                      );
+                    },
+                    child: Text("Whatsapp")),
               ],
             )
           ],
