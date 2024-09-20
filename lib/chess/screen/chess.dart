@@ -12,6 +12,7 @@ class ChessPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Container(
                 height: 500,
@@ -117,6 +118,7 @@ class ChessPage extends StatelessWidget {
                   ],
                 )),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(onPressed: () {}, child: Text("Ludo")),
                 ElevatedButton(onPressed: () {}, child: Text("Whatsapp")),
