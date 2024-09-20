@@ -1,4 +1,4 @@
-import 'package:ecommerceapp/Widget/periodic_table_elements.dart';
+import 'package:ecommerceapp/periodic_table/Widget/periodic_table_elements.dart';
 import 'package:flutter/material.dart';
 
 class PeriodictableScreen extends StatelessWidget {

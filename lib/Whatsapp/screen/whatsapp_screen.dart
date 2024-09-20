@@ -1,4 +1,6 @@
-import 'package:ecommerceapp/Widget/whatsapp_chats_component.dart';
+import 'package:ecommerceapp/Whatsapp/Widget/whatsapp_chats_component.dart';
+
+import 'package:ecommerceapp/chess/chess.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -24,22 +26,97 @@ class WhatsApp extends StatelessWidget {
             ],
           )),
           backgroundColor: Colors.black,
-          drawer: const Drawer(
+          drawer: Drawer(
             backgroundColor: Colors.black,
-            child: ListTile(
-              leading: CircleAvatar(
-                  backgroundImage: NetworkImage(
-                      "https://media.licdn.com/dms/image/v2/D4D03AQHHV7aTh6s2Gw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718216646029?e=1731542400&v=beta&t=Djbtt-p05KU21Gge4siWbbbkhU9hvSw37MUPwz_HKGQ")),
-              title: const Text(
-                "Rao Umair Ali",
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
-              ),
-              subtitle: const Text(
-                "0316-3522270",
-                style: TextStyle(
-                    fontWeight: FontWeight.normal, color: Colors.white),
-              ),
+            child: Column(
+              children: [
+                const ListTile(
+                  leading: CircleAvatar(
+                      backgroundImage: NetworkImage(
+                          "https://media.licdn.com/dms/image/v2/D4D03AQHHV7aTh6s2Gw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718216646029?e=1731542400&v=beta&t=Djbtt-p05KU21Gge4siWbbbkhU9hvSw37MUPwz_HKGQ")),
+                  title: const Text(
+                    "Rao Umair Ali",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: Colors.white),
+                  ),
+                  subtitle: const Text(
+                    "0316-3522270",
+                    style: TextStyle(
+                        fontWeight: FontWeight.normal, color: Colors.white),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    const Text(
+                      "Games",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 20,
+                          fontWeight: FontWeight.w900),
+                    ),
+                    Icon(
+                      Icons.gamepad_sharp,
+                      color: Colors.white,
+                    )
+                  ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  width: 300,
+                  color: Colors.black,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ChessPage()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                    ),
+                    child: const Text(
+                      "Chess",
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  width: 300,
+                  color: Colors.black,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => ChessPage()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      shape: const RoundedRectangleBorder(
+                        borderRadius: BorderRadius.zero,
+                      ),
+                    ),
+                    child: const Text(
+                      "Ludo",
+                      style: TextStyle(
+                          color: Colors.black, fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ),
           body: SingleChildScrollView(
