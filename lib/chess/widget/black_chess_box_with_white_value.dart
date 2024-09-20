@@ -10,14 +10,14 @@ Widget blackChessBoxWithValue() {
     ),
     child: Center(
       child: Container(
-        width: 50, // Size of the outer container holding the icon
-        height: 50,
+        width: 45, // Size of the outer container holding the icon
+        height: 45,
         decoration: BoxDecoration(
-          color: Colors.black,
+          color: Colors.white,
           shape: BoxShape.circle,
           border: Border.all(
             style: BorderStyle.solid,
-            color: Colors.white, // Border color of the circle (icon)
+            color: Colors.black, // Border color of the circle (icon)
             width: 4, // Border width
           ),
         ),
@@ -36,8 +36,8 @@ Widget blackChessBoxWithblackValue() {
     ),
     child: Center(
       child: Container(
-        width: 50,
-        height: 50,
+        width: 45,
+        height: 45,
         decoration: BoxDecoration(
           color: Colors.black,
           shape: BoxShape.circle,

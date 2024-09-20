@@ -39,11 +39,11 @@ Widget whiteChessBoxWithblackValue() {
         width: 45,
         height: 45,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Colors.black,
           shape: BoxShape.circle,
           border: Border.all(
             style: BorderStyle.solid,
-            color: Colors.black, // Border color for the circle (icon)
+            color: Colors.white, // Border color for the circle (icon)
             width: 4, // Border width
           ),
         ),
