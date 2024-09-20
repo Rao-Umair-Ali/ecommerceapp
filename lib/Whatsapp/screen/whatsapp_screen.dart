@@ -1,6 +1,6 @@
 import 'package:ecommerceapp/Whatsapp/Widget/whatsapp_chats_component.dart';
 
-import 'package:ecommerceapp/chess/chess.dart';
+import 'package:ecommerceapp/chess/screen/chess.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
