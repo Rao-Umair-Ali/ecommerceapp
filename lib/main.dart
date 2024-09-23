@@ -1,5 +1,4 @@
 import 'package:ecommerceapp/Whatsapp/screen/whatsapp_screen.dart';
-import 'package:ecommerceapp/chess/screen/chess.dart';
 
 import 'package:flutter/material.dart';
 
@@ -13,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ChessPage(),
+      home: WhatsApp(),
     );
   }
 }
